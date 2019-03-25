@@ -1,0 +1,33 @@
+{
+  "name": "game",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cells": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "over": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "player_x": {
+      "type": "object",
+      "required": true
+    },
+    "player_o": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
